@@ -1,4 +1,5 @@
 //Solution using promise
+//This solution is used the order of the console statements is not mandatory
 
 function getData(uId) {
     return new Promise((resolve, reject) => {
@@ -11,5 +12,8 @@ function getData(uId) {
 }
 
 console.log("start");
-getData("skc").then(email => console.log("Email id of the user id is: " + email));
+getData().then((email)=>console.log("Email id of the user id is: " + email));
 console.log("end");
+
+
+//if order of the console statements is mandatory then see the solution_2.js
